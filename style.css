@@ -6,10 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaf3f8;
-    color: #000;
+    background-color: #1a1615; /* Fundo escuro aconchegante */
+    color: #f5f0eb; /* Texto claro */
     padding: 20px;
 }
+
 img {
     display: block;
     width: 130px;
@@ -17,23 +18,24 @@ img {
     object-fit: cover;
     margin: 10px auto 20px;
     border-radius: 50%;
-    border: 5px solid #f6df9b;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border: 4px solid #ffb833; /* Amarelo quente da luz da luminária */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
+
 .container {
     max-width: 650px;
-    background-color: #fffefa;
+    background-color: #2b2320; /* Tom café/madeira escuro */
     margin: 0 auto 30px;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-    border: 1px solid #f1e2b8;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid #732a24; /* Bordas com tom marrom-avermelhado */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000;
+    color: #ffb833; /* Destaque em luz âmbar */
 }
 
 form {
@@ -52,23 +54,24 @@ form {
 label {
     font-weight: bold;
     font-size: 14px;
-    color: #000;
+    color: #e6dcd3;
 }
 
 input {
     padding: 10px;
-    border: 1px solid #b9d8e8;
+    border: 1px solid #54443e;
     border-radius: 8px;
     font-size: 16px;
-    background-color: #f8fcfe;
-    color: #000;
+    background-color: #1a1615;
+    color: #ffffff;
 }
 
 input:focus {
     outline: none;
-    border-color: #8dbfd8;
-    box-shadow: 0 0 0 3px rgba(141, 191, 216, 0.20);
+    border-color: #ffb833;
+    box-shadow: 0 0 0 3px rgba(255, 184, 51, 0.25);
 }
+
 button {
     padding: 11px 18px;
     font-size: 15px;
@@ -84,21 +87,21 @@ button:hover {
 }
 
 .btn-primary {
-    background-color: #a9d4e8;
-    color: #000;
+    background-color: #d97724; /* Laranja de madeira aquecida */
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #8fc5df;
+    background-color: #b86018;
 }
 
 .btn-danger {
-    background-color: #f0b9c4;
-    color: #000;
+    background-color: #732a24; /* Vermelho queimado dos jogos/mesas */
+    color: #ffffff;
 }
 
 .btn-danger:hover {
-    background-color: #e79eac;
+    background-color: #571e19;
 }
 
 .resumo-container {
@@ -107,12 +110,12 @@ button:hover {
     align-items: center;
     margin-bottom: 15px;
     padding-top: 15px;
-    border-top: 2px solid #f1e2b8;
+    border-top: 2px solid #54443e;
 }
 
 #total-estoque {
     font-size: 18px;
-    color: #000;
+    color: #ffb833;
 }
 
 /* Tabela */
@@ -127,34 +130,41 @@ table {
 }
 
 th, td {
-    border: 1px solid #c8dfe9;
+    border: 1px solid #3d322d;
     padding: 10px;
     text-align: center;
-    color: #000;
+    color: #f5f0eb;
 }
+
 th {
-    background-color: #f6df9b;
-    color: #000;
+    background-color: #d97724;
+    color: #ffffff;
     font-weight: bold;
 }
+
 th:first-child {
     border-top-left-radius: 12px;
 }
+
 th:last-child {
     border-top-right-radius: 12px;
 }
+
 tbody tr:nth-child(even) {
-    background-color: #fff0f3;
+    background-color: #231c19;
 }
+
 tbody tr:nth-child(odd) {
-    background-color: #f8fcfe;
+    background-color: #2b2320;
 }
+
 tbody tr:hover {
-    background-color: #fff5d6;
+    background-color: #3b2e29;
 }
+
 .btn-remover {
-    background-color: #f0b9c4;
-    color: #000;
+    background-color: #732a24;
+    color: #ffffff;
     padding: 6px 12px;
     font-size: 12px;
     border: none;
@@ -162,13 +172,15 @@ tbody tr:hover {
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
 }
+
 .btn-remover:hover {
-    background-color: #e79eac;
+    background-color: #571e19;
     transform: translateY(-1px);
 }
-   .btn-editar {
-    background-color: #a9d4e8;
-    color: #000;
+
+.btn-editar {
+    background-color: #ffb833;
+    color: #1a1615;
     padding: 6px 12px;
     font-size: 12px;
     border: none;
@@ -179,30 +191,31 @@ tbody tr:hover {
 }
 
 .btn-editar:hover {
-    background-color: #8fc5df;
+    background-color: #e59f20;
     transform: translateY(-1px);
 }
 
-
 /* Campo de pesquisa e mensagem quando a tabela estiver vazia */
+
 .busca-container {
     margin-bottom: 15px;
 }
 
 .mensagem-vazia {
     padding: 20px;
-    color: #555;
+    color: #b5a499;
     font-style: italic;
 }
 
-/* Sugestões do cadastro: a lista fica escondida quando o nome está vazio. */
+/* Sugestões do cadastro */
+
 #sugestoes-produtos {
     list-style: none;
     max-height: 190px;
     overflow-y: auto;
-    border: 1px solid #b9d8e8;
+    border: 1px solid #54443e;
     border-radius: 8px;
-    background: #fff;
+    background: #2b2320;
 }
 
 #sugestoes-produtos[hidden] {
@@ -214,7 +227,8 @@ tbody tr:hover {
     width: 100%;
     padding: 9px 12px;
     border-radius: 0;
-    background: #fff;
+    background: #2b2320;
+    color: #f5f0eb;
     text-align: left;
     font-size: 14px;
     font-weight: normal;
@@ -222,6 +236,6 @@ tbody tr:hover {
 
 #sugestoes-produtos button:hover,
 #sugestoes-produtos button:focus {
-    background: #eaf3f8;
+    background: #3b2e29;
     transform: none;
 }
